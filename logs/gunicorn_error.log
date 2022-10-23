@@ -1,0 +1,457 @@
+[2022-10-22 14:51:50 -0400] [11316] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 14:51:50 -0400] [11316] [INFO] Listening at: http://0.0.0.0:5001 (11316)
+[2022-10-22 14:51:50 -0400] [11316] [INFO] Using worker: sync
+[2022-10-22 14:51:50 -0400] [11317] [INFO] Booting worker with pid: 11317
+[2022-10-22 14:51:50 -0400] [11317] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'incoming_call'
+[2022-10-22 14:51:50 -0400] [11317] [INFO] Worker exiting (pid: 11317)
+[2022-10-22 14:51:50 -0400] [11319] [INFO] Booting worker with pid: 11319
+[2022-10-22 14:51:50 -0400] [11319] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.9/dist-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'incoming_call'
+[2022-10-22 14:51:50 -0400] [11319] [INFO] Worker exiting (pid: 11319)
+[2022-10-22 14:51:50 -0400] [11316] [WARNING] Worker with pid 11319 was terminated due to signal 15
+[2022-10-22 14:51:50 -0400] [11316] [INFO] Shutting down: Master
+[2022-10-22 14:51:50 -0400] [11316] [INFO] Reason: Worker failed to boot.
+[2022-10-22 14:53:53 -0400] [11663] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 14:53:53 -0400] [11663] [INFO] Listening at: http://0.0.0.0:5001 (11663)
+[2022-10-22 14:53:53 -0400] [11663] [INFO] Using worker: sync
+[2022-10-22 14:53:53 -0400] [11664] [INFO] Booting worker with pid: 11664
+[2022-10-22 14:53:53 -0400] [11665] [INFO] Booting worker with pid: 11665
+[2022-10-22 15:16:06 -0400] [11663] [INFO] Handling signal: hup
+[2022-10-22 15:16:06 -0400] [11663] [INFO] Hang up: Master
+[2022-10-22 15:16:06 -0400] [11663] [WARNING] Worker with pid 11665 was terminated due to signal 1
+[2022-10-22 15:16:06 -0400] [11663] [WARNING] Worker with pid 11664 was terminated due to signal 1
+[2022-10-22 15:16:06 -0400] [15675] [INFO] Booting worker with pid: 15675
+[2022-10-22 15:16:06 -0400] [15673] [INFO] Booting worker with pid: 15673
+[2022-10-22 15:16:06 -0400] [11663] [INFO] Handling signal: term
+[2022-10-22 15:16:07 -0400] [15675] [INFO] Worker exiting (pid: 15675)
+[2022-10-22 15:16:36 -0400] [11663] [INFO] Shutting down: Master
+[2022-10-22 15:17:52 -0400] [1414] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 15:17:52 -0400] [1414] [INFO] Listening at: http://0.0.0.0:5001 (1414)
+[2022-10-22 15:17:52 -0400] [1414] [INFO] Using worker: sync
+[2022-10-22 15:17:52 -0400] [1415] [INFO] Booting worker with pid: 1415
+[2022-10-22 15:17:52 -0400] [1416] [INFO] Booting worker with pid: 1416
+[2022-10-22 15:33:03 -0400] [1416] [INFO] Worker exiting (pid: 1416)
+[2022-10-22 15:33:03 -0400] [1415] [INFO] Worker exiting (pid: 1415)
+[2022-10-22 15:33:03 -0400] [1414] [INFO] Handling signal: term
+[2022-10-22 15:33:03 -0400] [1414] [WARNING] Worker with pid 1415 was terminated due to signal 15
+[2022-10-22 15:33:03 -0400] [1414] [WARNING] Worker with pid 1416 was terminated due to signal 15
+[2022-10-22 15:33:03 -0400] [1414] [INFO] Shutting down: Master
+[2022-10-22 15:33:04 -0400] [5570] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 15:33:04 -0400] [5570] [INFO] Listening at: http://0.0.0.0:5001 (5570)
+[2022-10-22 15:33:04 -0400] [5570] [INFO] Using worker: sync
+[2022-10-22 15:33:04 -0400] [5571] [INFO] Booting worker with pid: 5571
+[2022-10-22 15:33:04 -0400] [5573] [INFO] Booting worker with pid: 5573
+[2022-10-22 15:35:44 -0400] [5573] [INFO] Worker exiting (pid: 5573)
+[2022-10-22 15:35:44 -0400] [5571] [INFO] Worker exiting (pid: 5571)
+[2022-10-22 15:35:44 -0400] [5570] [INFO] Handling signal: term
+[2022-10-22 15:35:44 -0400] [5570] [WARNING] Worker with pid 5573 was terminated due to signal 15
+[2022-10-22 15:35:44 -0400] [5570] [WARNING] Worker with pid 5571 was terminated due to signal 15
+[2022-10-22 15:35:44 -0400] [5570] [INFO] Shutting down: Master
+[2022-10-22 15:36:08 -0400] [6293] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 15:36:08 -0400] [6293] [INFO] Listening at: http://0.0.0.0:5001 (6293)
+[2022-10-22 15:36:08 -0400] [6293] [INFO] Using worker: sync
+[2022-10-22 15:36:08 -0400] [6294] [INFO] Booting worker with pid: 6294
+[2022-10-22 15:36:08 -0400] [6295] [INFO] Booting worker with pid: 6295
+[2022-10-22 15:36:55 -0400] [6295] [INFO] Worker exiting (pid: 6295)
+[2022-10-22 15:36:55 -0400] [6294] [INFO] Worker exiting (pid: 6294)
+[2022-10-22 15:36:55 -0400] [6293] [INFO] Handling signal: term
+[2022-10-22 15:36:55 -0400] [6293] [WARNING] Worker with pid 6295 was terminated due to signal 15
+[2022-10-22 15:36:55 -0400] [6293] [WARNING] Worker with pid 6294 was terminated due to signal 15
+[2022-10-22 15:36:55 -0400] [6293] [INFO] Shutting down: Master
+[2022-10-22 15:36:55 -0400] [6553] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 15:36:55 -0400] [6553] [INFO] Listening at: http://0.0.0.0:5001 (6553)
+[2022-10-22 15:36:55 -0400] [6553] [INFO] Using worker: sync
+[2022-10-22 15:36:55 -0400] [6554] [INFO] Booting worker with pid: 6554
+[2022-10-22 15:36:55 -0400] [6555] [INFO] Booting worker with pid: 6555
+[2022-10-22 16:30:32 -0400] [6553] [WARNING] Worker with pid 6554 was terminated due to signal 1
+[2022-10-22 16:30:32 -0400] [6553] [WARNING] Worker with pid 6555 was terminated due to signal 1
+[2022-10-22 16:30:32 -0400] [14486] [INFO] Booting worker with pid: 14486
+[2022-10-22 16:30:32 -0400] [6553] [INFO] Handling signal: hup
+[2022-10-22 16:30:32 -0400] [6553] [INFO] Hang up: Master
+[2022-10-22 16:30:32 -0400] [14494] [INFO] Booting worker with pid: 14494
+[2022-10-22 16:30:32 -0400] [6553] [INFO] Handling signal: term
+[2022-10-22 16:30:32 -0400] [14511] [INFO] Booting worker with pid: 14511
+[2022-10-22 16:30:32 -0400] [14512] [INFO] Booting worker with pid: 14512
+[2022-10-22 16:30:33 -0400] [14494] [INFO] Worker exiting (pid: 14494)
+[2022-10-22 16:30:33 -0400] [14486] [INFO] Worker exiting (pid: 14486)
+[2022-10-22 16:31:02 -0400] [6553] [WARNING] Worker with pid 14511 was terminated due to signal 9
+[2022-10-22 16:31:02 -0400] [6553] [INFO] Shutting down: Master
+[2022-10-22 16:45:20 -0400] [3432] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 16:45:20 -0400] [3432] [INFO] Listening at: http://0.0.0.0:5001 (3432)
+[2022-10-22 16:45:20 -0400] [3432] [INFO] Using worker: sync
+[2022-10-22 16:45:20 -0400] [3433] [INFO] Booting worker with pid: 3433
+[2022-10-22 16:45:20 -0400] [3434] [INFO] Booting worker with pid: 3434
+[2022-10-22 16:56:25 -0400] [3432] [INFO] Handling signal: term
+[2022-10-22 16:56:25 -0400] [3433] [INFO] Worker exiting (pid: 3433)
+[2022-10-22 16:56:25 -0400] [3434] [INFO] Worker exiting (pid: 3434)
+[2022-10-22 16:56:25 -0400] [3432] [INFO] Shutting down: Master
+[2022-10-22 16:56:26 -0400] [6106] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 16:56:26 -0400] [6106] [INFO] Listening at: http://0.0.0.0:5001 (6106)
+[2022-10-22 16:56:26 -0400] [6106] [INFO] Using worker: sync
+[2022-10-22 16:56:26 -0400] [6107] [INFO] Booting worker with pid: 6107
+[2022-10-22 16:56:26 -0400] [6112] [INFO] Booting worker with pid: 6112
+[2022-10-22 17:01:14 -0400] [6107] [INFO] Worker exiting (pid: 6107)
+[2022-10-22 17:01:14 -0400] [6106] [INFO] Handling signal: term
+[2022-10-22 17:01:14 -0400] [6112] [INFO] Worker exiting (pid: 6112)
+[2022-10-22 17:01:15 -0400] [6106] [INFO] Shutting down: Master
+[2022-10-22 17:01:15 -0400] [7017] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:01:15 -0400] [7017] [INFO] Listening at: http://0.0.0.0:5001 (7017)
+[2022-10-22 17:01:15 -0400] [7017] [INFO] Using worker: sync
+[2022-10-22 17:01:15 -0400] [7018] [INFO] Booting worker with pid: 7018
+[2022-10-22 17:01:15 -0400] [7023] [INFO] Booting worker with pid: 7023
+[2022-10-22 17:03:04 -0400] [7017] [INFO] Handling signal: term
+[2022-10-22 17:03:04 -0400] [7023] [INFO] Worker exiting (pid: 7023)
+[2022-10-22 17:03:04 -0400] [7018] [INFO] Worker exiting (pid: 7018)
+[2022-10-22 17:03:04 -0400] [7017] [WARNING] Worker with pid 7018 was terminated due to signal 15
+[2022-10-22 17:03:04 -0400] [7017] [WARNING] Worker with pid 7023 was terminated due to signal 15
+[2022-10-22 17:03:04 -0400] [7017] [INFO] Shutting down: Master
+[2022-10-22 17:03:05 -0400] [7668] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:03:05 -0400] [7668] [INFO] Listening at: http://0.0.0.0:5001 (7668)
+[2022-10-22 17:03:05 -0400] [7668] [INFO] Using worker: sync
+[2022-10-22 17:03:05 -0400] [7669] [INFO] Booting worker with pid: 7669
+[2022-10-22 17:03:05 -0400] [7670] [INFO] Booting worker with pid: 7670
+[2022-10-22 17:03:11,478] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/andy/pi/incoming_call.py", line 9, in incoming_call
+    a = subprocess.Popen(['chromium-browser %U', '--new-window', '--start-fullscreen', 'https://web-01.tacobell.tech/pi/grandma'], user='andy', stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1823, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromium-browser %U'
+[2022-10-22 17:03:25 -0400] [7669] [INFO] Worker exiting (pid: 7669)
+[2022-10-22 17:03:25 -0400] [7668] [INFO] Handling signal: term
+[2022-10-22 17:03:25 -0400] [7670] [INFO] Worker exiting (pid: 7670)
+[2022-10-22 17:03:25 -0400] [7668] [WARNING] Worker with pid 7669 was terminated due to signal 15
+[2022-10-22 17:03:25 -0400] [7668] [INFO] Shutting down: Master
+[2022-10-22 17:03:26 -0400] [7750] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:03:26 -0400] [7750] [INFO] Listening at: http://0.0.0.0:5001 (7750)
+[2022-10-22 17:03:26 -0400] [7750] [INFO] Using worker: sync
+[2022-10-22 17:03:26 -0400] [7751] [INFO] Booting worker with pid: 7751
+[2022-10-22 17:03:26 -0400] [7753] [INFO] Booting worker with pid: 7753
+[2022-10-22 17:09:08 -0400] [7751] [INFO] Worker exiting (pid: 7751)
+[2022-10-22 17:09:08 -0400] [7753] [INFO] Worker exiting (pid: 7753)
+[2022-10-22 17:09:08 -0400] [7750] [INFO] Handling signal: term
+[2022-10-22 17:09:08 -0400] [7750] [WARNING] Worker with pid 7751 was terminated due to signal 15
+[2022-10-22 17:09:08 -0400] [7750] [WARNING] Worker with pid 7753 was terminated due to signal 15
+[2022-10-22 17:09:09 -0400] [7750] [INFO] Shutting down: Master
+[2022-10-22 17:09:09 -0400] [9717] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:09:09 -0400] [9717] [INFO] Listening at: http://0.0.0.0:5001 (9717)
+[2022-10-22 17:09:09 -0400] [9717] [INFO] Using worker: sync
+[2022-10-22 17:09:09 -0400] [9718] [INFO] Booting worker with pid: 9718
+[2022-10-22 17:09:09 -0400] [9719] [INFO] Booting worker with pid: 9719
+[2022-10-22 17:09:26 -0400] [9719] [INFO] Worker exiting (pid: 9719)
+[2022-10-22 17:09:26 -0400] [9718] [INFO] Worker exiting (pid: 9718)
+[2022-10-22 17:09:26 -0400] [9717] [INFO] Handling signal: term
+[2022-10-22 17:09:26 -0400] [9717] [WARNING] Worker with pid 9718 was terminated due to signal 15
+[2022-10-22 17:09:26 -0400] [9717] [WARNING] Worker with pid 9719 was terminated due to signal 15
+[2022-10-22 17:09:26 -0400] [9717] [INFO] Shutting down: Master
+[2022-10-22 17:09:27 -0400] [9816] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:09:27 -0400] [9816] [INFO] Listening at: http://0.0.0.0:5001 (9816)
+[2022-10-22 17:09:27 -0400] [9816] [INFO] Using worker: sync
+[2022-10-22 17:09:27 -0400] [9817] [INFO] Booting worker with pid: 9817
+[2022-10-22 17:09:27 -0400] [9818] [INFO] Booting worker with pid: 9818
+[2022-10-22 17:15:20 -0400] [9818] [INFO] Worker exiting (pid: 9818)
+[2022-10-22 17:15:20 -0400] [9817] [INFO] Worker exiting (pid: 9817)
+[2022-10-22 17:15:20 -0400] [9816] [INFO] Handling signal: term
+[2022-10-22 17:15:20 -0400] [9816] [WARNING] Worker with pid 9817 was terminated due to signal 15
+[2022-10-22 17:15:20 -0400] [9816] [WARNING] Worker with pid 9818 was terminated due to signal 15
+[2022-10-22 17:15:20 -0400] [9816] [INFO] Shutting down: Master
+[2022-10-22 17:15:20 -0400] [11395] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:15:20 -0400] [11395] [INFO] Listening at: http://0.0.0.0:5001 (11395)
+[2022-10-22 17:15:20 -0400] [11395] [INFO] Using worker: sync
+[2022-10-22 17:15:20 -0400] [11396] [INFO] Booting worker with pid: 11396
+[2022-10-22 17:15:20 -0400] [11397] [INFO] Booting worker with pid: 11397
+[2022-10-22 17:36:12 -0400] [11396] [INFO] Worker exiting (pid: 11396)
+[2022-10-22 17:36:12 -0400] [11397] [INFO] Worker exiting (pid: 11397)
+[2022-10-22 17:36:12 -0400] [11395] [INFO] Handling signal: term
+[2022-10-22 17:36:12 -0400] [11395] [WARNING] Worker with pid 11396 was terminated due to signal 15
+[2022-10-22 17:36:12 -0400] [11395] [WARNING] Worker with pid 11397 was terminated due to signal 15
+[2022-10-22 17:36:12 -0400] [11395] [INFO] Shutting down: Master
+[2022-10-22 17:36:17 -0400] [15050] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:36:17 -0400] [15050] [INFO] Listening at: http://0.0.0.0:5001 (15050)
+[2022-10-22 17:36:17 -0400] [15050] [INFO] Using worker: sync
+[2022-10-22 17:36:17 -0400] [15051] [INFO] Booting worker with pid: 15051
+[2022-10-22 17:36:17 -0400] [15052] [INFO] Booting worker with pid: 15052
+[2022-10-22 17:36:34,695] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/andy/pi/incoming_call.py", line 9, in incoming_call
+    a = subprocess.Popen(['chromium-browser', 'https://web-01.tacobell.tech/pi/grandma'], user='root', stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1823, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 1] Operation not permitted
+[2022-10-22 17:36:54 -0400] [15052] [INFO] Worker exiting (pid: 15052)
+[2022-10-22 17:36:54 -0400] [15051] [INFO] Worker exiting (pid: 15051)
+[2022-10-22 17:36:54 -0400] [15050] [INFO] Handling signal: term
+[2022-10-22 17:36:54 -0400] [15050] [WARNING] Worker with pid 15052 was terminated due to signal 15
+[2022-10-22 17:36:54 -0400] [15050] [WARNING] Worker with pid 15051 was terminated due to signal 15
+[2022-10-22 17:36:54 -0400] [15050] [INFO] Shutting down: Master
+[2022-10-22 17:36:58 -0400] [15208] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:36:58 -0400] [15208] [INFO] Listening at: http://0.0.0.0:5001 (15208)
+[2022-10-22 17:36:58 -0400] [15208] [INFO] Using worker: sync
+[2022-10-22 17:36:58 -0400] [15209] [INFO] Booting worker with pid: 15209
+[2022-10-22 17:36:58 -0400] [15210] [INFO] Booting worker with pid: 15210
+[2022-10-22 17:41:25 -0400] [15209] [INFO] Worker exiting (pid: 15209)
+[2022-10-22 17:41:25 -0400] [15208] [INFO] Handling signal: term
+[2022-10-22 17:41:25 -0400] [15210] [INFO] Worker exiting (pid: 15210)
+[2022-10-22 17:41:25 -0400] [15208] [WARNING] Worker with pid 15209 was terminated due to signal 15
+[2022-10-22 17:41:25 -0400] [15208] [WARNING] Worker with pid 15210 was terminated due to signal 15
+[2022-10-22 17:41:25 -0400] [15208] [INFO] Shutting down: Master
+[2022-10-22 17:41:46 -0400] [16700] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:41:46 -0400] [16700] [INFO] Listening at: http://0.0.0.0:5001 (16700)
+[2022-10-22 17:41:46 -0400] [16700] [INFO] Using worker: sync
+[2022-10-22 17:41:46 -0400] [16701] [INFO] Booting worker with pid: 16701
+[2022-10-22 17:41:46 -0400] [16702] [INFO] Booting worker with pid: 16702
+[2022-10-22 17:42:44 -0400] [16701] [INFO] Worker exiting (pid: 16701)
+[2022-10-22 17:42:44 -0400] [16700] [INFO] Handling signal: term
+[2022-10-22 17:42:44 -0400] [16702] [INFO] Worker exiting (pid: 16702)
+[2022-10-22 17:42:44 -0400] [16700] [WARNING] Worker with pid 16701 was terminated due to signal 15
+[2022-10-22 17:42:44 -0400] [16700] [WARNING] Worker with pid 16702 was terminated due to signal 15
+[2022-10-22 17:42:44 -0400] [16700] [INFO] Shutting down: Master
+[2022-10-22 17:42:45 -0400] [17131] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 17:42:45 -0400] [17131] [INFO] Listening at: http://0.0.0.0:5001 (17131)
+[2022-10-22 17:42:45 -0400] [17131] [INFO] Using worker: sync
+[2022-10-22 17:42:45 -0400] [17132] [INFO] Booting worker with pid: 17132
+[2022-10-22 17:42:45 -0400] [17133] [INFO] Booting worker with pid: 17133
+[2022-10-22 18:00:07 -0400] [17132] [INFO] Worker exiting (pid: 17132)
+[2022-10-22 18:00:07 -0400] [17133] [INFO] Worker exiting (pid: 17133)
+[2022-10-22 18:00:07 -0400] [17131] [INFO] Handling signal: term
+[2022-10-22 18:00:07 -0400] [17131] [WARNING] Worker with pid 17133 was terminated due to signal 15
+[2022-10-22 18:00:07 -0400] [17131] [WARNING] Worker with pid 17132 was terminated due to signal 15
+[2022-10-22 18:00:07 -0400] [17131] [INFO] Shutting down: Master
+[2022-10-22 18:00:08 -0400] [20399] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:00:08 -0400] [20399] [INFO] Listening at: http://0.0.0.0:5001 (20399)
+[2022-10-22 18:00:08 -0400] [20399] [INFO] Using worker: sync
+[2022-10-22 18:00:08 -0400] [20400] [INFO] Booting worker with pid: 20400
+[2022-10-22 18:00:08 -0400] [20401] [INFO] Booting worker with pid: 20401
+[2022-10-22 18:19:22 -0400] [20400] [INFO] Worker exiting (pid: 20400)
+[2022-10-22 18:19:22 -0400] [20399] [INFO] Handling signal: term
+[2022-10-22 18:19:22 -0400] [20401] [INFO] Worker exiting (pid: 20401)
+[2022-10-22 18:19:22 -0400] [20399] [WARNING] Worker with pid 20400 was terminated due to signal 15
+[2022-10-22 18:19:22 -0400] [20399] [INFO] Shutting down: Master
+[2022-10-22 18:19:23 -0400] [23213] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:19:23 -0400] [23213] [INFO] Listening at: http://0.0.0.0:5001 (23213)
+[2022-10-22 18:19:23 -0400] [23213] [INFO] Using worker: sync
+[2022-10-22 18:19:23 -0400] [23214] [INFO] Booting worker with pid: 23214
+[2022-10-22 18:19:23 -0400] [23218] [INFO] Booting worker with pid: 23218
+[2022-10-22 18:20:55 -0400] [23214] [INFO] Worker exiting (pid: 23214)
+[2022-10-22 18:20:55 -0400] [23218] [INFO] Worker exiting (pid: 23218)
+[2022-10-22 18:20:55 -0400] [23213] [INFO] Handling signal: term
+[2022-10-22 18:20:55 -0400] [23213] [WARNING] Worker with pid 23218 was terminated due to signal 15
+[2022-10-22 18:20:55 -0400] [23213] [WARNING] Worker with pid 23214 was terminated due to signal 15
+[2022-10-22 18:20:55 -0400] [23213] [INFO] Shutting down: Master
+[2022-10-22 18:20:56 -0400] [23899] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:20:56 -0400] [23899] [INFO] Listening at: http://0.0.0.0:5001 (23899)
+[2022-10-22 18:20:56 -0400] [23899] [INFO] Using worker: sync
+[2022-10-22 18:20:56 -0400] [23900] [INFO] Booting worker with pid: 23900
+[2022-10-22 18:20:56 -0400] [23901] [INFO] Booting worker with pid: 23901
+[2022-10-22 18:29:41 -0400] [23899] [INFO] Handling signal: term
+[2022-10-22 18:29:41 -0400] [23901] [INFO] Worker exiting (pid: 23901)
+[2022-10-22 18:29:41 -0400] [23900] [INFO] Worker exiting (pid: 23900)
+[2022-10-22 18:29:41 -0400] [23899] [WARNING] Worker with pid 23901 was terminated due to signal 15
+[2022-10-22 18:29:41 -0400] [23899] [WARNING] Worker with pid 23900 was terminated due to signal 15
+[2022-10-22 18:29:41 -0400] [23899] [INFO] Shutting down: Master
+[2022-10-22 18:29:42 -0400] [26113] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:29:42 -0400] [26113] [INFO] Listening at: http://0.0.0.0:5001 (26113)
+[2022-10-22 18:29:42 -0400] [26113] [INFO] Using worker: sync
+[2022-10-22 18:29:42 -0400] [26119] [INFO] Booting worker with pid: 26119
+[2022-10-22 18:29:42 -0400] [26120] [INFO] Booting worker with pid: 26120
+[2022-10-22 18:41:06 -0400] [26119] [INFO] Worker exiting (pid: 26119)
+[2022-10-22 18:41:06 -0400] [26120] [INFO] Worker exiting (pid: 26120)
+[2022-10-22 18:41:06 -0400] [26113] [INFO] Handling signal: term
+[2022-10-22 18:41:06 -0400] [26113] [WARNING] Worker with pid 26120 was terminated due to signal 15
+[2022-10-22 18:41:06 -0400] [26113] [WARNING] Worker with pid 26119 was terminated due to signal 15
+[2022-10-22 18:41:06 -0400] [26113] [INFO] Shutting down: Master
+[2022-10-22 18:41:07 -0400] [28041] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:41:07 -0400] [28041] [INFO] Listening at: http://0.0.0.0:5001 (28041)
+[2022-10-22 18:41:07 -0400] [28041] [INFO] Using worker: sync
+[2022-10-22 18:41:07 -0400] [28042] [INFO] Booting worker with pid: 28042
+[2022-10-22 18:41:07 -0400] [28043] [INFO] Booting worker with pid: 28043
+[2022-10-22 18:42:08 -0400] [28041] [INFO] Handling signal: term
+[2022-10-22 18:42:08 -0400] [28042] [INFO] Worker exiting (pid: 28042)
+[2022-10-22 18:42:08 -0400] [28043] [INFO] Worker exiting (pid: 28043)
+[2022-10-22 18:42:08 -0400] [28041] [INFO] Shutting down: Master
+[2022-10-22 18:42:09 -0400] [28508] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:42:09 -0400] [28508] [INFO] Listening at: http://0.0.0.0:5001 (28508)
+[2022-10-22 18:42:09 -0400] [28508] [INFO] Using worker: sync
+[2022-10-22 18:42:09 -0400] [28509] [INFO] Booting worker with pid: 28509
+[2022-10-22 18:42:09 -0400] [28512] [INFO] Booting worker with pid: 28512
+[2022-10-22 18:42:17 -0400] [28508] [INFO] Handling signal: term
+[2022-10-22 18:42:17 -0400] [28512] [INFO] Worker exiting (pid: 28512)
+[2022-10-22 18:42:17 -0400] [28509] [INFO] Worker exiting (pid: 28509)
+[2022-10-22 18:42:17 -0400] [28508] [INFO] Shutting down: Master
+[2022-10-22 18:42:18 -0400] [28564] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:42:18 -0400] [28564] [INFO] Listening at: http://0.0.0.0:5001 (28564)
+[2022-10-22 18:42:18 -0400] [28564] [INFO] Using worker: sync
+[2022-10-22 18:42:18 -0400] [28565] [INFO] Booting worker with pid: 28565
+[2022-10-22 18:42:18 -0400] [28566] [INFO] Booting worker with pid: 28566
+[2022-10-22 18:42:53 -0400] [28564] [CRITICAL] WORKER TIMEOUT (pid:28565)
+[2022-10-22 18:42:54 -0400] [28564] [WARNING] Worker with pid 28565 was terminated due to signal 9
+[2022-10-22 18:42:54 -0400] [28978] [INFO] Booting worker with pid: 28978
+[2022-10-22 18:57:10 -0400] [28566] [INFO] Worker exiting (pid: 28566)
+[2022-10-22 18:57:10 -0400] [28978] [INFO] Worker exiting (pid: 28978)
+[2022-10-22 18:57:10 -0400] [28564] [INFO] Handling signal: term
+[2022-10-22 18:57:10 -0400] [28564] [WARNING] Worker with pid 28566 was terminated due to signal 15
+[2022-10-22 18:57:10 -0400] [28564] [WARNING] Worker with pid 28978 was terminated due to signal 15
+[2022-10-22 18:57:10 -0400] [28564] [INFO] Shutting down: Master
+[2022-10-22 18:57:11 -0400] [31477] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:57:11 -0400] [31477] [INFO] Listening at: http://0.0.0.0:5001 (31477)
+[2022-10-22 18:57:11 -0400] [31477] [INFO] Using worker: sync
+[2022-10-22 18:57:11 -0400] [31478] [INFO] Booting worker with pid: 31478
+[2022-10-22 18:57:11 -0400] [31479] [INFO] Booting worker with pid: 31479
+[2022-10-22 18:57:48 -0400] [31478] [INFO] Worker exiting (pid: 31478)
+[2022-10-22 18:57:48 -0400] [31477] [INFO] Handling signal: term
+[2022-10-22 18:57:48 -0400] [31479] [INFO] Worker exiting (pid: 31479)
+[2022-10-22 18:57:48 -0400] [31477] [WARNING] Worker with pid 31478 was terminated due to signal 15
+[2022-10-22 18:57:48 -0400] [31477] [WARNING] Worker with pid 31479 was terminated due to signal 15
+[2022-10-22 18:57:48 -0400] [31477] [INFO] Shutting down: Master
+[2022-10-22 18:57:49 -0400] [31867] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 18:57:49 -0400] [31867] [INFO] Listening at: http://0.0.0.0:5001 (31867)
+[2022-10-22 18:57:49 -0400] [31867] [INFO] Using worker: sync
+[2022-10-22 18:57:49 -0400] [31868] [INFO] Booting worker with pid: 31868
+[2022-10-22 18:57:49 -0400] [31869] [INFO] Booting worker with pid: 31869
+[2022-10-22 19:04:37 -0400] [31869] [INFO] Worker exiting (pid: 31869)
+[2022-10-22 19:04:37 -0400] [31868] [INFO] Worker exiting (pid: 31868)
+[2022-10-22 19:04:37 -0400] [31867] [INFO] Handling signal: term
+[2022-10-22 19:04:37 -0400] [31867] [WARNING] Worker with pid 31869 was terminated due to signal 15
+[2022-10-22 19:04:37 -0400] [31867] [WARNING] Worker with pid 31868 was terminated due to signal 15
+[2022-10-22 19:04:37 -0400] [31867] [INFO] Shutting down: Master
+[2022-10-22 19:04:38 -0400] [886] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 19:04:38 -0400] [886] [INFO] Listening at: http://0.0.0.0:5001 (886)
+[2022-10-22 19:04:38 -0400] [886] [INFO] Using worker: sync
+[2022-10-22 19:04:38 -0400] [887] [INFO] Booting worker with pid: 887
+[2022-10-22 19:04:38 -0400] [890] [INFO] Booting worker with pid: 890
+[2022-10-22 19:10:58 -0400] [886] [INFO] Handling signal: term
+[2022-10-22 19:10:58 -0400] [887] [INFO] Worker exiting (pid: 887)
+[2022-10-22 19:10:58 -0400] [890] [INFO] Worker exiting (pid: 890)
+[2022-10-22 19:10:59 -0400] [886] [INFO] Shutting down: Master
+[2022-10-22 19:10:59 -0400] [1941] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 19:10:59 -0400] [1941] [INFO] Listening at: http://0.0.0.0:5001 (1941)
+[2022-10-22 19:10:59 -0400] [1941] [INFO] Using worker: sync
+[2022-10-22 19:10:59 -0400] [1942] [INFO] Booting worker with pid: 1942
+[2022-10-22 19:10:59 -0400] [1947] [INFO] Booting worker with pid: 1947
+[2022-10-22 19:22:34 -0400] [1947] [INFO] Worker exiting (pid: 1947)
+[2022-10-22 19:22:34 -0400] [1942] [INFO] Worker exiting (pid: 1942)
+[2022-10-22 19:22:34 -0400] [1941] [INFO] Handling signal: term
+[2022-10-22 19:22:34 -0400] [1941] [WARNING] Worker with pid 1947 was terminated due to signal 15
+[2022-10-22 19:22:34 -0400] [1941] [WARNING] Worker with pid 1942 was terminated due to signal 15
+[2022-10-22 19:22:35 -0400] [1941] [INFO] Shutting down: Master
+[2022-10-22 19:22:35 -0400] [3579] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 19:22:35 -0400] [3579] [INFO] Listening at: http://0.0.0.0:5001 (3579)
+[2022-10-22 19:22:35 -0400] [3579] [INFO] Using worker: sync
+[2022-10-22 19:22:35 -0400] [3580] [INFO] Booting worker with pid: 3580
+[2022-10-22 19:22:35 -0400] [3581] [INFO] Booting worker with pid: 3581
+[2022-10-22 19:27:07 -0400] [3581] [INFO] Worker exiting (pid: 3581)
+[2022-10-22 19:27:07 -0400] [3579] [INFO] Handling signal: term
+[2022-10-22 19:27:07 -0400] [3580] [INFO] Worker exiting (pid: 3580)
+[2022-10-22 19:27:07 -0400] [3579] [WARNING] Worker with pid 3581 was terminated due to signal 15
+[2022-10-22 19:27:07 -0400] [3579] [INFO] Shutting down: Master
+[2022-10-22 19:27:07 -0400] [4698] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 19:27:07 -0400] [4698] [INFO] Listening at: http://0.0.0.0:5001 (4698)
+[2022-10-22 19:27:07 -0400] [4698] [INFO] Using worker: sync
+[2022-10-22 19:27:07 -0400] [4699] [INFO] Booting worker with pid: 4699
+[2022-10-22 19:27:08 -0400] [4700] [INFO] Booting worker with pid: 4700
+[2022-10-22 19:28:59 -0400] [4698] [INFO] Handling signal: term
+[2022-10-22 19:28:59 -0400] [4698] [WARNING] Worker with pid 4699 was terminated due to signal 1
+[2022-10-22 19:28:59 -0400] [4698] [WARNING] Worker with pid 4700 was terminated due to signal 1
+[2022-10-22 19:28:59 -0400] [4698] [INFO] Shutting down: Master
+[2022-10-22 19:31:50 -0400] [1946] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 19:31:50 -0400] [1946] [INFO] Listening at: http://0.0.0.0:5001 (1946)
+[2022-10-22 19:31:50 -0400] [1946] [INFO] Using worker: sync
+[2022-10-22 19:31:50 -0400] [1951] [INFO] Booting worker with pid: 1951
+[2022-10-22 19:31:50 -0400] [1954] [INFO] Booting worker with pid: 1954
+[2022-10-22 19:35:31 -0400] [1946] [INFO] Handling signal: term
+[2022-10-22 19:35:31 -0400] [1951] [INFO] Worker exiting (pid: 1951)
+[2022-10-22 19:35:31 -0400] [1954] [INFO] Worker exiting (pid: 1954)
+[2022-10-22 19:35:31 -0400] [1946] [WARNING] Worker with pid 1954 was terminated due to signal 15
+[2022-10-22 19:35:31 -0400] [1946] [WARNING] Worker with pid 1951 was terminated due to signal 15
+[2022-10-22 19:35:32 -0400] [1946] [INFO] Shutting down: Master
+[2022-10-22 19:35:32 -0400] [3329] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 19:35:32 -0400] [3329] [INFO] Listening at: http://0.0.0.0:5001 (3329)
+[2022-10-22 19:35:32 -0400] [3329] [INFO] Using worker: sync
+[2022-10-22 19:35:32 -0400] [3335] [INFO] Booting worker with pid: 3335
+[2022-10-22 19:35:32 -0400] [3337] [INFO] Booting worker with pid: 3337
+[2022-10-22 19:41:32 -0400] [3337] [INFO] Worker exiting (pid: 3337)
+[2022-10-22 19:41:32 -0400] [3335] [INFO] Worker exiting (pid: 3335)
+[2022-10-22 19:41:32 -0400] [3329] [INFO] Handling signal: term
+[2022-10-22 19:41:32 -0400] [3329] [WARNING] Worker with pid 3337 was terminated due to signal 15
+[2022-10-22 19:41:32 -0400] [3329] [WARNING] Worker with pid 3335 was terminated due to signal 15
+[2022-10-22 19:41:33 -0400] [3329] [INFO] Shutting down: Master
+[2022-10-22 20:00:24 -0400] [7666] [INFO] Starting gunicorn 20.1.0
+[2022-10-22 20:00:24 -0400] [7666] [INFO] Listening at: http://0.0.0.0:5001 (7666)
+[2022-10-22 20:00:24 -0400] [7666] [INFO] Using worker: sync
+[2022-10-22 20:00:24 -0400] [7671] [INFO] Booting worker with pid: 7671
+[2022-10-22 20:00:24 -0400] [7674] [INFO] Booting worker with pid: 7674
+[2022-10-22 20:02:33 -0400] [7671] [INFO] Worker exiting (pid: 7671)
+[2022-10-22 20:02:33 -0400] [7674] [INFO] Worker exiting (pid: 7674)
+[2022-10-22 20:02:33 -0400] [7666] [INFO] Handling signal: term
+[2022-10-22 20:02:33 -0400] [7666] [WARNING] Worker with pid 7674 was terminated due to signal 15
+[2022-10-22 20:02:33 -0400] [7666] [WARNING] Worker with pid 7671 was terminated due to signal 15
+[2022-10-22 20:02:33 -0400] [7666] [INFO] Shutting down: Master
