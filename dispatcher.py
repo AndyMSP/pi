@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/incoming_call', strict_slashes=False)
 def incoming_call():
-    subprocess.Popen(['chromium-browser', '--new-window', '--start-fullscreen', 'https://web-01.tacobell.tech/call/pi/demo'])
+    subprocess.Popen(['chromium-browser', '--new-window', '--start-fullscreen', 'https://everybodysweb.com/call/pi/demo'])
     subprocess.run(['bash', 'tv_on.sh'])
     return 'received'
 
